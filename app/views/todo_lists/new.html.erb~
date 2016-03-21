@@ -3,7 +3,7 @@
 <div class="forms" 
 
 <%= render 'form' %>
-
+kj
 </div>
 
 <div class="links">
