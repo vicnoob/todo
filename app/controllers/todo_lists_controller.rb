@@ -14,6 +14,7 @@ class TodoListsController < ApplicationController
 
   # GET /todo_lists/new
   def new
+    puts "abcalksdjfad"
     @todo_list = TodoList.new
   end
 
@@ -24,8 +25,9 @@ class TodoListsController < ApplicationController
   # POST /todo_lists
   # POST /todo_lists.json
   def create
+    puts "abcd123"
     @todo_list = TodoList.new(todo_list_params)
-
+    puts "abc"
     respond_to do |format|
       if @todo_list.save
         format.html { redirect_to @todo_list, notice: 'Todo list was successfully created.' }
